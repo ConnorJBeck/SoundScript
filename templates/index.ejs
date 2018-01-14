@@ -3,7 +3,7 @@
 <script type="application/javascript">
 
     var accessId = '4f8216f9-3c1e-455c-8ce6-50adde757de8';
-    var taskUrl = 'analyze/chords';
+    var taskUrl = 'analyze/melody';
     var parameters = { blocking: false, format: 'json', access_id: accessId };
 
     // the values for these parameters were taken from the corresponding controls in the demo form
@@ -46,6 +46,7 @@
     // start task when clicking on the "Start task" button
     $(document).ready(function() {
         $('#start').click(function() {
+            parameters['input file'] = $('#url').val();
             // execute an HTTP GET using the task's URL, the parameters and callback functions defined above
             $.ajax({ url: 'https://api.sonicAPI.com/' + taskUrl, data: parameters,
                 success: onTaskStarted, error: onTaskFailed, crossDomain: true });
@@ -68,6 +69,7 @@
       Welcome to your StdLib Static Website! LOLOLOLOL
     </p>
     <%- include('welcome') %>
+    URL of Music File: <input type="text" name="url"><br>
     <input type="button" id="start" value="Start task" />
     <div id="result" />
   </body>
