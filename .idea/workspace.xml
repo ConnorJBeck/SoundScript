@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f331a64-4e1f-48d2-b7f6-1ed66827748b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change beforePath="$PROJECT_DIR$/templates/index.ejs" afterPath="$PROJECT_DIR$/templates/index.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -73,8 +72,8 @@
       <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="425" column="25" lean-forward="true" selection-start-line="425" selection-start-column="25" selection-end-line="425" selection-end-column="25" />
+            <state relative-caret-position="307">
+              <caret line="49" column="23" lean-forward="true" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -119,7 +118,6 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-30" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="717" />
@@ -289,15 +287,15 @@
       <option name="presentableId" value="Default" />
       <updated>1515889697796</updated>
       <workItem from="1515889699172" duration="11450000" />
-      <workItem from="1515909771569" duration="6049000" />
+      <workItem from="1515909771569" duration="7844000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17499000" />
+    <option name="totallyTimeSpent" value="19294000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-30" y="23" width="1280" height="717" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="717" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24921875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -456,8 +454,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="425" column="25" lean-forward="true" selection-start-line="425" selection-start-column="25" selection-end-line="425" selection-end-column="25" />
+        <state relative-caret-position="307">
+          <caret line="49" column="23" lean-forward="true" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
           <folding />
         </state>
       </provider>

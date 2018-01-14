@@ -42,12 +42,11 @@
 
             var midi;
             var midipitch;
+            var amount;
+            amount = Math.ceil(data["melody_result"]["notes"][3][duration]);
             midi = data["melody_result"]["notes"][0]["midi_pitch"];
             midipitch = Math.floor(midi);
             switch(midipitch){
-                case 0:
-                    food = "Rice";
-                    break;
                 case 1:
                     food = "Fried Rice";
                     break;
@@ -435,7 +434,7 @@
                 default:
                     food = "Homemade Soup"
             }
-            $('#result').html('Task succeeded, analysis result: Eat ' + food);
+            $('#result').html('Task succeeded, analysis result: Eat ' + amount + food);
         }});
     }
 
