@@ -34,10 +34,406 @@
 
         $.ajax({ url: downloadUrl, crossDomain: true, success: function(data) {
             var food;
-            if (data["melody_result"]["notes"][0]["midi_pitch"] > 31) {
-                food = "steak"
-            } else {
-                food = "ice cream"
+            // if (data["melody_result"]["notes"][0]["midi_pitch"] > 31) {
+            //     food = "steak"
+            // } else {
+            //     food = "ice cream"
+            // }
+
+            var midi;
+            var midipitch;
+            midi = data["melody_result"]["notes"][0]["midi_pitch"];
+            midipitch = Math.floor(midi);
+            switch(midipitch){
+                case 0:
+                    food = "Rice";
+                    break;
+                case 1:
+                    food = "Fried Rice";
+                    break;
+                case 2:
+                    food = "Biscuits";
+                    break;
+                case 3:
+                    food = "Pie";
+                    break;
+                case 4:
+                    food = "Cheesecake";
+                    break;
+                case 5:
+                    food = "Fries";
+                    break;
+                case 6:
+                    food = "Brownie";
+                    break;
+                case 7:
+                    food = "Fruit Cakes";
+                    break;
+                case 8:
+                    food = "Ice Cream";
+                    break;
+                case 9:
+                    food = "Egg tarts";
+                    break;
+                case 10:
+                    food = "roast salmon";
+                    break;
+                case 11:
+                    food = "beef  tenderloin";
+                    break;
+                case 12:
+                    food = "Apple Risotto";
+                    break;
+                case 13:
+                    food = "steamed fish";
+                    break;
+                case 14:
+                    food = "bird's nest soup";
+                    break;
+                case 15:
+                    food = "shrimp roe and mussel soup";
+                    break;
+                case 16:
+                    food = "crab stew";
+                    break;
+                case 17:
+                    food = "pasta a la pesto";
+                    break;
+                case 18:
+                    food = "congee";
+                    break;
+                case 19:
+                    food = "prawn kebobs";
+                    break;
+                case 20:
+                    food = "shiitake mushrooms";
+                    break;
+                case 21:
+                    food = "quail";
+                    break;
+                case 22:
+                    food = "abalone with osmanthus flowers";
+                    break;
+                case 23:
+                    food = "squid";
+                    break;
+                case 24:
+                    food = "lotus roots";
+                    break;
+                case 25:
+                    food = "bamboo shoots";
+                    break;
+                case 26:
+                    food = "sea cucumber";
+                    break;
+                case 27:
+                    food = "Peking Duck";
+                    break;
+                case 28:
+                    food = "Chaliapin Steak";
+                    break;
+                case 29:
+                    food = "Roast Pork";
+                    break;
+                case 30:
+                    food = "Karaage";
+                    break;
+                case 31:
+                    food = "Souffle";
+                    break;
+                case 32:
+                    food = "Omelette";
+                    break;
+                case 33:
+                    food = "Gyoza";
+                    break;
+                case 34:
+                    food = "Terrine";
+                    break
+                case 35:
+                    food = "Curry";
+                    break;
+                case 36:
+                    food = "Mapo Tofu";
+                    break;
+                case 37:
+                    food = "Hot Sesame Bun";
+                    break;
+                case 38:
+                    food = "Hachis Parmentier";
+                    break;
+                case 39:
+                    food = "Boeuf bourguignon";
+                    break;
+                case 40:
+                    food = "Tonkatsu";
+                    break;
+                case 41:
+                    food = "Venison Steak";
+                    break;
+                case 42:
+                    food = "Yakisoba";
+                    break;
+                case 43:
+                    food = "Takoyaki";
+                    break;
+                case 44:
+                    food = "Okonomiyaki";
+                    break;
+                case 45:
+                    food = "Cold Udon";
+                    break;
+                case 46:
+                    food = "Shoyu Ramen";
+                    break;
+                case 47:
+                    food = "Beef Stew";
+                    break;
+                case 48:
+                    food = "Beef Rib Soup";
+                    break;
+                case 49:
+                    food = "Seafood Pancake";
+                    break;
+                case 50:
+                    food ="Chou Farci";
+                    break;
+                case 51:
+                    food ="Eggs Benedict";
+                    break;
+                case 52:
+                    food ="Coulibiac";
+                    break;
+                case 53:
+                    food ="Semifreddo";
+                    break;
+                case 54:
+                    food ="Beef Roti";
+                    break;
+                case 55:
+                    food ="Hainanese Chicken Rice";
+                    break;
+                case 56:
+                    food ="Vegetable Tempura";
+                    break;
+                case 57:
+                    food ="Shrimp Tempura";
+                    break;
+                case 58:
+                    food ="Kofta";
+                    break;
+                case 59:
+                    food ="Dorayaki";
+                    break;
+                case 60:
+                    food ="Saumon Confit Flamme";
+                    break;
+                case 61:
+                    food ="Chicken Pot Pie";
+                    break;
+                case 62:
+                    food ="Ravioli";
+                    break;
+                case 63:
+                    food ="Caramelized Duck";
+                    break;
+                case 64:
+                    food ="Grilled Mackerel";
+                    break;
+                case 65:
+                    food ="Insalata Frittata";
+                    break;
+                case 66:
+                    food ="Bear Claw";
+                    break;
+                case 67:
+                    food ="Barbecue";
+                    break;
+                case 68:
+                    food ="Beef Manhattan";
+                    break;
+                case 69:
+                    food ="Breakfast burrito";
+                    break;
+                case 70:
+                    food ="Buffalo Burger";
+                    break;
+                case 71:
+                    food ="";
+                    break;
+                case 72:
+                    food ="Bull Roast";
+                    break;
+                case 73:
+                    food ="Cheese dog";
+                    break;
+                case 74:
+                    food ="Chicken and waffles";
+                    break;
+                case 75:
+                    food ="Chicken fried steak";
+                    break;
+                case 76:
+                    food ="Chili dog";
+                    break;
+                case 77:
+                    food ="Chips and dip";
+                    break;
+                case 78:
+                    food ="Choco pie";
+                    break;
+                case 79:
+                    food ="City Chicken";
+                    break;
+                case 80:
+                    food ="Clam cake";
+                    break;
+                case 81:
+                    food ="Corn dog";
+                    break;
+                case 82:
+                    food ="Creamed corn";
+                    break;
+                case 83:
+                    food ="Drunken chicken";
+                    break;
+                case 84:
+                    food ="French dip";
+                    break;
+                case 85:
+                    food ="Fried Chicken";
+                    break;
+                case 86:
+                    food ="Hot chicken";
+                    break;
+                case 87:
+                    food ="Lobster Newberg";
+                    break;
+                case 88:
+                    food ="Lorna Doone";
+                    break;
+                case 89:
+                    food ="Meatcake";
+                    break;
+                case 90:
+                    food ="Milk toast";
+                    break;
+                case 91:
+                    food ="Oysters Rockefeller";
+                    break;
+                case 92:
+                    food ="Pasta Salad";
+                    break;
+                case 93:
+                    food ="Pumpkin pie";
+                    break;
+                case 94:
+                    food ="Ribs";
+                    break;
+                case 95:
+                    food ="Rolled oyster";
+                    break;
+                case 96:
+                    food ="Sausage gravy";
+                    break;
+                case 97:
+                    food ="Sloppy joe";
+                    break;
+                case 98:
+                    food ="Scrapple";
+                    break;
+                case 99:
+                    food ="Sonofabitch stew";
+                    break;
+                case 100:
+                    food ="Squab";
+                    break;
+                case 101:
+                    food ="Stuffed ham";
+                    break;
+                case 102:
+                    food ="Stuffed peppers";
+                    break;
+                case 103:
+                    food ="Succotash";
+                    break;
+                case 104:
+                    food ="Swiss steak";
+                    break;
+                case 105:
+                    food ="Turducken";
+                    break;
+                case 106:
+                    food ="Pizza";
+                    break;
+                case 107:
+                    food ="Bologna Sausage";
+                    break;
+                case 108:
+                    food ="Itallian hot dog";
+                    break;
+                case 109:
+                    food ="Vienna Sausage";
+                    break;
+                case 110:
+                    food ="Meatloaf";
+                    break;
+                case 111:
+                    food ="Mashed pumpkin";
+                    break;
+                case 112:
+                    food ="Maraca pie";
+                    break;
+                case 113:
+                    food ="Pastrami";
+                    break;
+                case 114:
+                    food ="Pepperoni";
+                    break;
+                case 115:
+                    food ="Pickled cucumber";
+                    break;
+                case 116:
+                    food ="Popcorn";
+                    break;
+                case 117:
+                    food ="Maple bacon donut";
+                    break;
+                case 118:
+                    food ="Liver and Onions";
+                    break;
+                case 119:
+                    food ="London roll";
+                    break;
+                case 120:
+                    food ="Fajita";
+                    break;
+                case 121:
+                    food ="German chocolate cake";
+                    break;
+                case 122:
+                    food ="Eggs Neptune";
+                    break;
+                case 123:
+                    food ="Crab cake";
+                    break;
+                case 124:
+                    food ="Cornish game hen";
+                    break;
+                case 125:
+                    food ="Deviled Crab";
+                    break;
+                case 126:
+                    food ="Deviled Egg";
+                    break;
+                case 127:
+                    food ="Chowder";
+                    break;
+                case 128:
+                    food ="Chicken Divan";
+                    break;
+                default:
+                    food = "Homemade Soup"
             }
             $('#result').html('Task succeeded, analysis result: Eat ' + food);
         }});
