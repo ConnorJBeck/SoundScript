@@ -31,10 +31,19 @@
     function onTaskSucceeded(fileId) {
         var downloadUrl = 'https://api.sonicAPI.com/file/download?file_id=' + fileId + '&access_id=' + accessId + '&format=json';
 
+
         $.ajax({ url: downloadUrl, crossDomain: true, success: function(data) {
-            $('#result').html('Task succeeded, analysis result:<pre>' + JSON.stringify(data, null, 4) + '</pre>');
+            var food;
+            if (data["melody_result"]["notes"][0]["midi_pitch"] > 31) {
+                food = "steak"
+            } else {
+                food = "ice cream"
+            }
+            $('#result').html('Task succeeded, analysis result: Eat ' + food);
         }});
     }
+
+    //<pre>' + JSON.stringify(data, null, 4) + '</pre>'
 
     function onTaskFailed(response) {
         var data = $.parseJSON(response.responseText);
